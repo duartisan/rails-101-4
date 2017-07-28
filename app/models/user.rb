@@ -18,6 +18,6 @@ class User < ApplicationRecord
   end
 
   def quit!(group)
-    participated_group.delete(group)
+    participated_groups.delete(group)
   end
 end
